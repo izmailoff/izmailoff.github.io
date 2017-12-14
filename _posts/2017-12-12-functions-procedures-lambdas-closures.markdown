@@ -15,7 +15,7 @@ A function is one the most basic units of abstraction in a computer program. It'
 
 Wikipedia lists these synonyms for the term function: subroutine, procedure, routine, method, subprogram or a callable unit.
 
-You'll find varying terminology in different programming languages and software products. Here is how I like to call things based on my procedural, OOP and FP background, and conext I'm working in:
+You'll find varying terminology in different programming languages and software products. Here is how I like to call things based on my procedural, OOP and FP background, and context I'm working in:
 
 * **Function** - a code unit that exists in a global scope or a namespace and does not belong to any object. Pure functions that take input and produce output without any side effects can be also simply called functions.
 * **Procedure** - a code unit that produces side effects and may or may not return a value.
