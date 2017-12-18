@@ -2,7 +2,7 @@
 layout: post
 title:  "Purelly Functional Sets"
 date:   2016-06-06 15:15:14 +0800
-categories: jekyll update
+categories: functional programming, functional sets
 ---
 ## Intro
 This is a quick example of functional sets.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Functions, procedures, lambdas and closures"
 date:   2017-12-12 15:15:14 +0800
-categories: jekyll update
+categories: functional programming, lambda, closure, function, procedure
 ---
 This is the first part of a series of articles on functions.
 
