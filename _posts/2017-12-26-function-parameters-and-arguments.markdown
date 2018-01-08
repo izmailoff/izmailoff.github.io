@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "Function Parameters and Arguments"
 date:   2017-12-12 15:15:14 +0800
-categories: parameters, arguments
+categories: [Programming Languages]
 ---
 Function parameters can be quite diverse. Programming languages use certain types of function parameters that go hand in hand with the language paradigm. I think just by looking at available parameter types in a language one can learn a lot about its flavor.
 

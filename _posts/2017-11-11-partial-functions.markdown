@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "Partial Functions"
 date:   2017-11-11 19:19:14 +0800
-categories: functional programming, partial function
+categories: [Programming Languages]
 ---
 Let's talk about partial functions (PF). Don't confuse partial functions with partially applied functions which are described in [this article]({{ site.baseurl }}{% post_url 2017-12-20-currying-and-partial-application %}).
 

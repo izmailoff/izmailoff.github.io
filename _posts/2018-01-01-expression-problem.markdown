@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "Expression Problem"
 date:   2018-01-01 19:19:14 +0800
-categories: expression problem
+categories: [Programming Languages]
 ---
 ## Definition
 Let's talk about the expression problem and one of it's possible solutions. Expression problem has been re-discovered multiple times. Let's jump straight into it without diving into history.

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "Currying and Partial Application"
 date:   2017-12-20 15:15:14 +0800
-categories: functional programming, currying, partial application, functions, curried function, partially applied function
+categories: [Programming Languages, Functional Programming]
 ---
 Let's talk about currying and partial application - two related but distinct topics. It might help to get familiar with [lambdas and closures]({{ site.baseurl }}{% post_url 2017-12-12-functions-procedures-lambdas-closures %}) first before diving into this topic.
 

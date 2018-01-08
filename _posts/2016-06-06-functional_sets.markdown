@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "Purelly Functional Sets"
 date:   2016-06-06 15:15:14 +0800
-categories: functional programming, functional sets
+categories: [Programming Languages, Functional Programming]
 ---
 ## Intro
 This is a quick example of functional sets.

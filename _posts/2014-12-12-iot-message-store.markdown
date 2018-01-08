@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: mypost
 title:  "MQTT IoT Store with MongoDB"
 date:   2016-06-06 15:15:14 +0800
-categories: iot mongodb mqtt
+categories: [IoT]
 ---
 ## Intro
 On how to use MQTT protocol and save all messages to MongoDB. I'll quickly describe a little service I've built and how the whole setup works.
