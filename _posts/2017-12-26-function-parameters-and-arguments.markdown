@@ -9,7 +9,6 @@ Function parameters can be quite diverse. Programming languages use certain type
 In this article I aim to cover the obvious and not-so-obvious aspects of parameters and arguments in different languages.
 
 ## Definitions
-
 Let's start with trivial definitions to keep things clear.
 
 >In computer programming, a **parameter** is a special kind of variable, used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are called **arguments**.
@@ -17,8 +16,7 @@ Let's start with trivial definitions to keep things clear.
 
 Clear and simple: parameters are variable declarations, arguments are actual values. Yet many practitioners use these terms interchangeably depending upon context so beware.
 
-## Call by Value/Reference
-
+## Call By Value/Reference
 Most common ways of passing parameters are:
 
 * **By value** - a copy of an argument is made and passed to the function. Any changes to that argument, even if allowed, are *not visible to the caller*.
@@ -31,6 +29,74 @@ For example, in Java there are no C++ style references and everything is passed 
 In pure FP languages, on the other hand, there is only call by value, or at least there is no distinction between value and reference since they are immutable. Due to efficiency considerations a call by value can be implemented as call by reference in such cases.
 
 Wikipedia's [Evaluation Strategy](https://en.wikipedia.org/wiki/Evaluation_strategy) lists a few more options apart from call-by-reference and call-by-value, but they are similar in a sense to these major two options. Special language constructs might help you with copying modified objects back as in 'call by copy-restore' but can be simulated with either of our 2 main strategies.
+
+## By-Name Parameters
+[By-name](https://docs.scala-lang.org/tour/by-name-parameters.html) or lazy parameters is another way to pass a value into a function. Such parameter is evaluated only when it's used in the function. It's similar to by-value but lazily evaluated. Lazy languages like Haskell don't differentiate between by-name parameters and otherwise because everything is evaluated when it's used. Scala has special syntax to declare such params: prepend `=>` to a type. Let's see an example from [here](https://docs.scala-lang.org/tour/by-name-parameters.html) that implements a while loop:
+
+{% highlight scala %}
+def whileLoop(condition: => Boolean)(body: => Unit): Unit =
+  if (condition) {
+    body
+    whileLoop(condition)(body)
+  }
+
+var i = 2
+
+whileLoop (i > 0) {
+  println(i)
+  i -= 1
+}  // prints 2 1
+{% endhighlight %}
+
+Lazy parameters are handy when a parameter itself is treated as a code block. You might want to differ it's evaluation because it's computationally expensive and might not need to be executed, or because you want to do it when the time is right within a function. For example, here is a function that measures how long it takes to run some code block:
+
+{% highlight scala %}
+def timeIt[T](block: => T): T = {
+  val start = System.currentTimeMillis
+  val result = block // now the argument is evaluated
+  val elapsed = System.currentTimeMillis - start
+  println(s"Elapsed time ms: %1d.".format(elapsed))
+  result
+}
+{% endhighlight %}
+
+If by-name params are not available in the language they can be simulated with lambda argument that takes no arguments, which is treated as a callable parameter by the function. Example in Python:
+
+{% highlight python %}
+def time_it(code_block):
+    import timeit
+    start_time = timeit.default_timer()
+    result = code_block()
+    elapsed_sec = timeit.default_timer() - start_time
+    print("Elapsed time sec: {}.".format(elapsed_sec))
+    return result, elapsed_sec
+{% endhighlight %}
+
+## Named Parameters
+Some popular languages like Java don't support [named parameters](https://en.wikipedia.org/wiki/Named_parameter), while others like Python or Scala do.
+
+Examples from Wikipedia:
+
+**Java** (no support):
+{% highlight java %}
+window.addNewControl("Title", 20, 50, 100, 50, true);
+{% endhighlight %}
+
+**Python**:
+{% highlight python %}
+window.addNewControl(title="Title",
+                     xPosition=20,
+                     yPosition=50,
+                     width=100,
+                     height=50,
+                     drawingNow=true)
+{% endhighlight %}
+
+Named parameters make code more verbose but possibly easier to read. In dynamic languages like Python they might facilitate refactoring.
+
+If named parameters are not available they can be simulated with different techniques like: datastructures (dictionary/map), fluent interface/builder pattern, lambdas/closures.
+
+I prefer to use named parameters if the function I'm calling requires too many arguments, the use of the arguments is not clear from caller context, or when arguments are of the same type, especially booleans. Using named parameters all the time creates too much clutter. You can use good variable names for argument values to avoid such verbosity.
 
 ## In/Out Arguments
 There are three kinds/modes of parameters in terms of effects they have on caller:
@@ -97,7 +163,7 @@ def print_args(*args):
 See argument packing and unpacking for more details.
 
 **Scala**
-{% highlight python %}
+{% highlight scala %}
 def printArgs[T](args: T*) = args.foreach(println)
 {% endhighlight %}
 
@@ -134,7 +200,6 @@ class Baz[A]  // An invariant class
 {% endhighlight %}
 
 Note that variance is defined at class level here, but class methods will use parameter types that behave according to that definition.
-
 
 ## Default Arguments
 [Default parameters](https://en.wikipedia.org/wiki/Default_argument) are quite common these days in many languages. Whenever they are not available they can be implemented via overloading. A function with less arguments will call overloaded function with additional arguments passing default values in.
