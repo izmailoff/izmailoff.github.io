@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "Expression Problem"
 date:   2018-01-01 19:19:14 +0800
 categories: [Programming Languages]

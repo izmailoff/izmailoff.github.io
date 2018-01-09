@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "Currying and Partial Application"
 date:   2017-12-20 15:15:14 +0800
 categories: [Programming Languages, Functional Programming]

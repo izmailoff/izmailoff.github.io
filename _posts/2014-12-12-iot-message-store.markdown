@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "MQTT IoT Store with MongoDB"
 date:   2016-06-06 15:15:14 +0800
 categories: [IoT]

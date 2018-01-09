@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "Partial Functions"
 date:   2017-11-11 19:19:14 +0800
 categories: [Programming Languages]

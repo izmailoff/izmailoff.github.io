@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "Functions, Procedures, Lambdas and Closures"
 date:   2017-12-12 15:15:14 +0800
 categories: [Programming Languages, Functional Programming]

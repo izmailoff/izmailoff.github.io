@@ -1,0 +1,46 @@
+---
+layout: post
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+	{% include header.html %}
+
+	<main class="page-content" aria-label="Content">
+		<div class="wrapper">
+
+			<div class="post-categories" style="font-weight:bold">
+				{% if post %}
+					{% assign categories = post.categories %}
+				{% else %}
+					{% assign categories = page.categories %}
+				{% endif %}
+				{% if page.id %}
+					Categories:
+				{% endif %}
+				{% for category in categories %}
+					<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}{% unless forloop.last %},&nbsp;{% endunless %}</a>
+					<!-- {% unless forloop.last %},&nbsp;{% endunless %} -->
+				{% endfor %}
+				{% if page.id %}
+					<br>
+					<hr>
+					<br>
+				{% endif %}
+
+			</div>
+			{{ content }}
+		</div>
+	</main>
+
+	{% include footer.html %}
+
+</body>
+
+</html>
+
+

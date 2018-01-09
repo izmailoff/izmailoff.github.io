@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: post
 title:  "Purelly Functional Sets"
 date:   2016-06-06 15:15:14 +0800
 categories: [Programming Languages, Functional Programming]
