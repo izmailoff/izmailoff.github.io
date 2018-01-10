@@ -64,7 +64,7 @@ RPC implementation over AMQP is essentialy a two way [pub-sub](https://en.wikipe
 
 ![Nameko RPC Workflow](/assets/nameko_rpc/nameko_amqp_rpc_workflow.png){:class="img-responsive"}
 
-Note the importance of the fact that the client picks a new <GUID> *every time on startup* to uniquely represent it's queue. This way you can have multiple clients of the same type/codebase acting in complete isolation.
+Note the importance of the fact that the client picks a new `<GUID>` *every time on startup* to uniquely represent it's queue. This way you can have multiple clients of the same type/codebase acting in complete isolation.
 
 Correlation ID is important, as I mentioned earlier, to know which response belongs to which request. Because of asynchronous nature of this RPC implementation, you might receive responses out of order. There is no other way to know the mapping, other than using some ID.
 
