@@ -31,6 +31,9 @@ Sometimes I'm active on Stackoverflow:
 <img src="https://stackoverflow.com/users/flair/1972909.png" width="208" height="58" alt="profile for yǝsʞǝlA at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for yǝsʞǝlA at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a>
 
-Connect with me on LinkedIn:
-[LinkedIn](https://sg.linkedin.com/in/aleksey-izmailov-b265881b).
+My Stackoverflow [Developer Story](https://stackoverflow.com/story/alekseyizmailov).
+
+My Stackoverflow [CV](https://stackoverflow.com/cv/alekseyizmailov).
+
+Connect with me on [LinkedIn](https://sg.linkedin.com/in/aleksey-izmailov-b265881b).
 
