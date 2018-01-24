@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title:
+title: izmailoff
 email: izmailoff@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about best programming practices, tricks and maybe some machine learning.
@@ -35,6 +35,11 @@ permalink: /:categories/:title/
 
 # Google Analytics
 google_analytics: UA-112122335-1
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    shortname: izmailoff
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
