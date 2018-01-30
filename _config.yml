@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Topics: Functional Programming (FP), Object Oriented Programming (OOP),
   Machine Learning (ML), Big Data, performance, coding, and ranting about programming life.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://izmailoff.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AlekseyIzmailov
 github_username:  izmailoff
 
