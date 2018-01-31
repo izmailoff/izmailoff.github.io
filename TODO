@@ -1,0 +1,51 @@
+posts to write:
+
+- Generators, Streams, Iterators/Iterables, lazy evaluation, coroutines?
+- Coroutines
+- Continuations
+- Parser Combinators vs regexes
+- Perfect Programming Language
+
+- Scala native
+- Folds and breaking out of fold
+- Reactive streams
+- Parallel programming options in Scala
+- mutable state handling - using gists I have
+- Phantom types
+- Levels of developers - according to Odersky and otherwise
+- Typesafety of different languages
+- Category Theory
+
+- Python decorators?
+
+- Expression problem - other solutions
+
+- lambda architecture vs reactive
+
+- ML - everything in order from Andrew Ng courses with impl
+- Math - all math needed for ML
+
+- Databases - comparison: no-sql, sql, temporal, columnar, various ACID impls and 
+- MongDB tricks - automic update/insert patterns
+- schema migrations, apache ddl, liquibase, C# entity framework, hibernate, JPA, ORMs vs FRMs, ODMs ...
+
+- Windows vs Unix
+
+- Personal thoughts
+
+coding:
+
+- Dark theme
+- Images, favicon
+
+
+profile:
+
+- Courses and certificates
+- Books
+- Chess?
+- talks and slides?
+- Collections in Jekyll sense of posts I like and other links
+
+
+
