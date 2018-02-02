@@ -5,7 +5,7 @@ date:   2018-01-31 19:19:14 +0800
 categories: [Databases]
 ---
 ## Problem
-I've unswered this question on LinkedIn and [Stackoverflow](https://stackoverflow.com/questions/21649146/conditional-upsert-in-mongodb/21649147#21649147) and I thought it's an interesting pattern to share. Here is the problem statement:
+I've answered this question on LinkedIn and [Stackoverflow](https://stackoverflow.com/questions/21649146/conditional-upsert-in-mongodb/21649147#21649147) and I thought it's an interesting pattern to share. Here is the problem statement:
 
 > Suppose we have documents like `{_id: ..., data: ..., timestamp: ...}`.
 Is there any way to write an update criteria which will satisfy following rules:  
