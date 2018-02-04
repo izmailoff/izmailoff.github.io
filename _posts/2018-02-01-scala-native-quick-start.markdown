@@ -37,12 +37,12 @@ Now you can generate native binary with:
 
     sbt nativeLink
 
-This should produce a binary at this path: `./target/scala-2.11/scala_native_hello_world-out`.
+This should produce a binary at this path: `./target/scala-2.11/scala-native-example-out`.
 
 That's it, just run the binary to see how it works. Here is an example of `wc -l`-like program from my repo:
 
 {% highlight console %}
-# ./target/scala-2.11/scala_native_hello_world-out build.sbt 
+# ./target/scala-2.11/scala-native-example-out build.sbt 
 Number of lines: 3
 {% endhighlight %}
 
