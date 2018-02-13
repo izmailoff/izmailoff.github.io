@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Purelly Functional Sets"
+title:  "Purely Functional Sets"
 date:   2016-06-06 15:15:14 +0800
 categories: [Programming Languages, Functional Programming]
 ---
@@ -8,7 +8,7 @@ categories: [Programming Languages, Functional Programming]
 This is a quick example of functional sets.
 
 You are probably intimately familiar with Java's [sets](https://docs.oracle.com/javase/7/docs/api/java/util/Set.html) `java.util.Set<E>` interface and it's most common implementation `java.util.HashSet<E>`, or with Python's [set](https://docs.python.org/3/tutorial/datastructures.html#sets) `set` / `{1, 2}`, or even Scala's `scala.collection.immutable.Set`. This
-example of purelly functional sets might bend your thinking a little if you've never seen it before.
+example of purely functional sets might bend your thinking a little if you've never seen it before.
 I don't remember whether I've seen it in one of the Scala books or in a great "Functional Programming Course in Scala" by Martin Odersky. Nevertheless it's worth checking out and all credit goes to them.
 
 ## Example
