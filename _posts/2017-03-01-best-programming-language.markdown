@@ -2,7 +2,7 @@
 layout: post
 title:  "The Best Programming Language"
 date:   2017-03-01 19:19:14 +0800
-categories: [Programming Languages]
+categories: [Musings]
 ---
 
 I've been to a family party once. My sister invited some of her friends over. I knew that two of them were seasoned software developers with strong math background, working in cool companies and having some well paid side projects. Naturally I didn't want to get into technical discussions because others around the table were not into programming at all. Being a nerd as I am, and not finding any topic to continue the conversation I asked: “what's your favourite programming language?”. I thought I would get a fairly short answer and we move on to other things to discuss. At that time I recently learned Scala and discovered Functional Programming (FP). I was very excited about it. I could see better new ways of doing things and in a way was curious if these guys, who were maybe 20 years older than me, were also into FP. I thought they might not know Scala, since it's fairly new and at their age and status there is not enough time to keep chasing every new technology. What happened next somewhat unpleasantly surprised me - they just laughed. I don't remember if they followed up their laughter with a short explanation, but their message was clear to me: it all depends on a task at hand and some languages fit better than others for a specific task.
