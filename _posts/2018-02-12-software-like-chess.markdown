@@ -87,6 +87,16 @@ Understanding and applying tradeoffs in chess, programming and life is a sign of
 ## Decision Making
 When an expert player takes a look at a chess position a few moves almost immediately pop up in his head. He usually ends up chosing one of those candidates. Sometimes the best move is not so obvious and we have to find it analytically, but we are pretty good at recognizing the patterns without putting effort into it. We have similar experience with engineering problems. We can come up with a few design or architectural patterns quickly. Sometimes we can clearly see those will work, othertimes it take meticulous effort to prove oneself right or wrong. Intuition and analytical thinking go hand in hand in programming, chess and hopefully in our lives too.
 
+## Surprise, Surprise
+There is one of the areas where chess and software development differ drastically. In programming we have a [POLA](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) (Principle of least astonishment/surprise) which states that users should not be surprised by how system works. This especially applies to reading code. It should not be overly complicated and misleading, it should work as you would expect it to work by default. The code that is clear and easy to read is considered a sign of mastery, making it easier for developers to read and change it. Unsurprising user interfaces are easier for users to learn and use.
+
+> Great programmers write baby code.
+[Erik Meijer]
+
+On contrary, in chess a very simple plan can be easily seen by an opponent and thus prevented from coming to fruition. High level players usually come up with very sophisticated plans and tactics to catch their opponent off guard. Many times they do make strongest moves dictated by position, but they also manage to find and exploit subtleties of position to their advantage. Sometimes the purpose of some move becomes obvious ten, twenty moves later in the game.
+
+Developers try to save others time by making things clear, chess players try to waste opponent's time by complicating things and hiding their intentions.
+
 ## Model of Life
 In his famous book "How Life Imitates Chess: Making the Right Moves, from the Board to the Boardroom" Garry Kasparov discusses decision making similarities and going only forward thinking of chess and life. Chess has been compared to life many times and has been used as a drosophila of AI for quite some time. I think programming is related to the types of processes that we go through in our daily life as well like: understanding a problem, coming up with initial idea, analyzing that idea to see if it works, producing a final solution. The great skill one can learn from programming is the power of abstraction. We can break down a big problem into small manageable pieces and construct solution out of little building blocks. The valuable decision making skills from chess can be also applied when dealing with analytical problems or even with uncertainty. Can we translate chess or coding skills to other domains? I think there is a limit there, but if we build a character by playing chess or programming it stays forever.
 
