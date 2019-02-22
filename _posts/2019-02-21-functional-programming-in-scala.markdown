@@ -31,11 +31,7 @@ categories: [Programming Languages]
 
 ### Chapter 3
 
-### 3.1
+### 3.1 - 3.6??
 
-<script src="https://scastie.scala-lang.org/izmailoff/8TP78o3hTtOVTtab6Ymoig.js"></script>
-
-### 3.2
-
-<script src="https://scastie.scala-lang.org/izmailoff/r92YDkkHTRyc8oPkcPbYbA.js"></script>
+<script src="https://scastie.scala-lang.org/izmailoff/27oaFCqOTuqWfFNUefEf0A.js"></script>
 
