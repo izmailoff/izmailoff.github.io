@@ -28,3 +28,14 @@ categories: [Programming Languages]
 
 <script src="https://scastie.scala-lang.org/izmailoff/g7URnzlvRH2jNmbDpURkgg.js"></script>
 
+
+### Chapter 3
+
+### 3.1
+
+<script src="https://scastie.scala-lang.org/izmailoff/8TP78o3hTtOVTtab6Ymoig.js"></script>
+
+### 3.2
+
+<script src="https://scastie.scala-lang.org/izmailoff/r92YDkkHTRyc8oPkcPbYbA.js"></script>
+
